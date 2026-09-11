@@ -2,13 +2,15 @@
 
 
 
-\## Overview
+\*\*Overview\*\*
+
+
 
 Built a Windows Server 2019 Active Directory domain controller from scratch, then hardened it with domain-wide security policies and enabled advanced logging to support future SIEM detection work.
 
 
 
-\## What Was Built
+\*\*What Was Built\*\*
 
 \- Windows Server 2019 Domain Controller (`homelab.local`)
 
@@ -24,7 +26,7 @@ Built a Windows Server 2019 Active Directory domain controller from scratch, the
 
 
 
-\## Password Policy (via Group Policy)
+\*\*Password Policy (via Group Policy)\*\*
 
 \- Minimum password length: 12 characters
 
@@ -36,7 +38,9 @@ Built a Windows Server 2019 Active Directory domain controller from scratch, the
 
 
 
-\## Audit Policy (via Group Policy)
+\*\*Audit Policy (via Group Policy)\*\*
+
+
 
 Enabled Success/Failure auditing for:
 
@@ -54,7 +58,7 @@ Without this, Windows doesn't log most authentication or account activity by def
 
 
 
-\## PowerShell Logging
+\*\*PowerShell Logging\*\*
 
 \- Module Logging: enabled for all modules (`\*`)
 
@@ -66,13 +70,15 @@ This captures the actual commands run in PowerShell, including the real underlyi
 
 
 
-\## Sysmon
+\*\*Sysmon\*\*
+
+
 
 Installed Sysmon using the community-maintained SwiftOnSecurity configuration, which logs process creation, network connections, and other system-level activity in much more detail than Windows provides by default.
 
 
 
-\## Screenshots
+\*\*Screenshots\*\*
 
 \- `ad-ou-structure.png`: OU structure and user accounts in AD Users and Computers
 
